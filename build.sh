@@ -6,7 +6,7 @@ DXMT="https://github.com/3Shain/dxmt/releases/download/v0.60/dxmt-v0.60-builtin.
 mkdir -p work
 cd work
 # rm -rf *
-mkdir -p dxvk dxmt mvk gptk
+mkdir -p dxmt gptk
 # echo "[*] DXVK"
 # curl -L "$DXVK" | tar xz --strip-components=1 -C dxvk
 #if dxmt isnt downloaded
@@ -25,6 +25,6 @@ mkdir -p bundled/Converge.bundle
 
 cp -r gptk/Contents/Resources/wine bundled/Converge.bundle/
 
-cp -r dxmt/i386-windows/* bundled/Converge.bundle/wine/i386-windows
-cp -r dxmt/x86_64-windows/* bundled/Converge.bundle/wine/x86_64-windows
-cp -r dxmt/x86_64-unix/* bundled/Converge.bundle/wine/x86_64-unix
+cp -r dxmt/i386-windows/* bundled/Converge.bundle/wine/lib/wine/i386-windows
+cp -r dxmt/x86_64-windows/* bundled/Converge.bundle/wine/lib/wine/x86_64-windows
+cp -r dxmt/x86_64-unix/* bundled/Converge.bundle/wine/lib/wine/x86_64-unix
