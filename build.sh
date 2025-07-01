@@ -31,6 +31,8 @@ mkdir -p bundled/Converge.bundle
 
 echo "[»] Game Porting Toolkit"
 cp -r gptk/Contents/Resources/wine bundled/Converge.bundle/
+echo "[*] Patching DLSS"
+mv bundled/Converge.bundle/wine/lib/wine/x86_64-windows/nvngx-on-metalfx.dll bundled/Converge.bundle/wine/lib/wine/x86_64-windows/nvngx.dll
 
 echo "[»] MoltenVK"
 cp -r mvk/MoltenVK/dynamic/dylib/macOS/libMoltenVK.dylib bundled/Converge.bundle/wine/lib/
